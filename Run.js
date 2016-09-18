@@ -1,6 +1,8 @@
 var PythonShell = require('python-shell');
- 
-PythonShell.run('Scratchcoin.py', function (err) {
+
+setInterval(function(){
+ PythonShell.run('Scratchcoin.py', function (err) {
   if (err) throw err;
   console.log('finished');
-});
+ });
+},1000);
